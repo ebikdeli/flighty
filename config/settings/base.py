@@ -89,6 +89,7 @@ INSTALLED_APPS = [
     # (eg: this folder named 'apps' relative to base dir: './apps/') we just need to do this:
 
     'users',
+    'flight',
 
     # To be able to use database for 'constance'
     # 'constance.backends.database',
@@ -180,7 +181,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'apadana.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'OPTIONS': {
             'timeout': 20,

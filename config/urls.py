@@ -22,6 +22,7 @@ urlpatterns = [
     # path('support/', include('support.urls')),
     # path('dashboard', include('dashboard.urls')),
     # path('accounts/', include('allauth.urls')),
+    path('flight/', include('flight.urls')),
     path('', include('vitrin.urls')),
 ]
 
